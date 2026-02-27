@@ -7,10 +7,10 @@ void analizar(int numero){
     scanf("%d", &numero);
 
         if (numero % 2 == 0) {
-        printf("El numero %d es PAR.\n", numero);
+        printf("El numero %d es PAR.\n\n", numero);
         }
             else {
-            printf("El numero %d es IMPAR.\n", numero);
+            printf("El numero %d es IMPAR.\n\n", numero);
             }
 }
 
@@ -19,7 +19,7 @@ void calculadora(int x, int y, int operacion, int resultado){
     printf("\nBienvenido a la calculadora\nQue quieres realizar?\n");
     printf("1. Suma.\n2. Resta\n3. Salir\n");
     printf("Elige una opcion: ");
-    scanf("%i", &operacion);
+    scanf("%d", &operacion);
 
 
     switch(operacion){
@@ -40,7 +40,7 @@ void calculadora(int x, int y, int operacion, int resultado){
         break;
 
         default:
-            printf("Fin del programa\n");
+            printf("Cerrando calculadora...\n\n");
         break;
     }
 }
@@ -60,7 +60,7 @@ do{
     printf("\nQue quieres realizar?\n");
     printf("1. Analizar num.\n2. Caculadora\n3. Finalizar\n");
     printf("Elige una opcion: ");
-    scanf("%i", &respuesta);
+    scanf("%d", &respuesta);
 
      switch(respuesta){
         case 1:
@@ -76,7 +76,7 @@ do{
             return 0;
 
         default:
-            printf("opcion no valida\n");
+            printf("Opcion no valida\n");
         break;
 }
 
