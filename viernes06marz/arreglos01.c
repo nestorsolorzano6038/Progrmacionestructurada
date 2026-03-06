@@ -3,15 +3,18 @@
 
 int main()
 {
-    float temp1, temp2;
-    float temp[24];
-    int dummy;
+    int tablero[5][5]={
+    {1,2,3,4,5},
+    {6,7,8,9,10},
+    {11,12,13,14,15},
+    {16,17,18,19,20},
+    {21,21,23,24,25}};
 
-    printf("Dirrecion de mem de 2 flotantes:\n%i\n%i\n", &temp1, &temp2);
-    printf("Direecion de temp[24]: %i\n", temp);
-    printf("Direecion de temp[24]: %i\n", &temp[24]);
-    printf("Dirrecion de dummy: %i\n", &dummy);
-
+    for(int i=0; i<5; i++){
+        for(int j=0; j<5; j++){
+        printf("%d ", tablero[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
-
