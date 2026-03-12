@@ -13,7 +13,7 @@ int main(){
     int ax1,ay1,ax21,ay21,ax22,ay22; //variables para guardar coordenadas del JUGADOR 1
     int bx1,by1,bx21,by21,bx22,by22; //variables para guardar coordenadas del JUGADOR 2
 
-///Jugador1 creaci髇 de tablero///
+///Jugador1 creaci贸n de tablero///
 
     for(int i=0; i<n; i++){
             jugador1[i][0]=i;
@@ -45,7 +45,7 @@ int main(){
         }
         printf("\n");
 
-///Jugador2 creaci髇 de tablero///
+///Jugador2 creaci贸n de tablero///
 
     for(int i=0; i<n; i++){
             jugador2[i][0]=i;
@@ -154,7 +154,7 @@ int si=1; //variable para salir del bucle while cuando la coordenada es correcta
          if ((ax21>3 || ax21<1)||(ay21>3||ay21<1)){
                 printf("\nERROR: fuera del rango");
         }
-        else if(ax1==ax21 && ay1==ay21){ //Validaci髇 de coordenada repetida
+        else if(ax1==ax21 && ay1==ay21){ //Validaci贸n de coordenada repetida
             printf("\nERROR: invadiste el lugar del Barco 1");
         }
         else{ //Si no se repite la coordenada sale del bucle
@@ -163,7 +163,7 @@ int si=1; //variable para salir del bucle while cuando la coordenada es correcta
         }
     }
     //Coordenada 2:
-    si=2; //reutilizaci髇 de variable para entrar al bucle 2
+    si=2; //reutilizaci贸n de variable para entrar al bucle 2
     while(si==2){
         printf("\nIngresa las coordenadas del bote 2 (x2,y2):\n");
         scanf("%d %d",&ax22,&ay22);
@@ -171,7 +171,7 @@ int si=1; //variable para salir del bucle while cuando la coordenada es correcta
         if ((ax22>3 || ax22<1)||(ay22>3||ay22<1)){
                 printf("\nERROR: fuera del rango");
         }
-        else if((ax1==ax22 && ay1==ay22)||(ax21==ax22 && ay21==ay22)){ //validaci髇 de coordenada repetida
+        else if((ax1==ax22 && ay1==ay22)||(ax21==ax22 && ay21==ay22)){ //validaci贸n de coordenada repetida
             printf("\nERROR: coordenada repetida");
         }
         else if((ax22>=ax21+2 || ax22<=ax21-2)||(ay22>=ay21+2 || ay22<=ay21-2)){ //Validacion solo permitir cordenadas adyacentes
@@ -186,7 +186,7 @@ int si=1; //variable para salir del bucle while cuando la coordenada es correcta
         }
     }
 
-    //Coloca '1' en la ubicaci髇 del barco 2
+    //Coloca '1' en la ubicaci贸n del barco 2
     jugador1[ax21][ay21]=254;
     jugador1[ax22][ay22]=254;
 
@@ -213,7 +213,7 @@ int si=1; //variable para salir del bucle while cuando la coordenada es correcta
     jugador1[ax21][ay21]=254;
     jugador1[ax22][ay22]=254;
 
-    //Ya que completemos la validaci髇 del barco 2 para el jugador 1, copiamos y pegamos para el jugador 2.
+    //Ya que completemos la validaci贸n del barco 2 para el jugador 1, copiamos y pegamos para el jugador 2.
 
     si=1; //variable para salir del bucle while cuando la coordenada es correcta
     //Jugador 2
@@ -225,7 +225,7 @@ int si=1; //variable para salir del bucle while cuando la coordenada es correcta
          if ((bx21>3 || bx21<1)||(by21>3||by21<1)){
                 printf("\nERROR: fuera del rango");
         }
-        else if(bx1==bx21 && by1==by21){ //Validaci髇 de coordenada repetida
+        else if(bx1==bx21 && by1==by21){ //Validaci贸n de coordenada repetida
             printf("\nERROR: invadiste el lugar del Barco 1");
         }
         else{ //Si no se repite la coordenada sale del bucle
@@ -234,7 +234,7 @@ int si=1; //variable para salir del bucle while cuando la coordenada es correcta
         }
     }
     //Coordenada 2:
-    si=2; //reutilizaci髇 de variable para entrar al bucle 2
+    si=2; //reutilizaci贸n de variable para entrar al bucle 2
     while(si==2){
         printf("\nIngresa las coordenadas del bote 2 (x2,y2):\n");
         scanf("%d %d",&bx22,&by22);
@@ -242,7 +242,7 @@ int si=1; //variable para salir del bucle while cuando la coordenada es correcta
         if ((bx22>3 || bx22<1)||(by22>3||by22<1)){
                 printf("\nERROR: fuera del rango");
         }
-        else if((bx1==bx22 && by1==by22)||(bx21==bx22 && by21==by22)){ //validaci髇 de coordenada repetida
+        else if((bx1==bx22 && by1==by22)||(bx21==bx22 && by21==by22)){ //validaci贸n de coordenada repetida
             printf("\nERROR: coordenada repetida");
         }
         else if((bx22>=bx21+2 || bx22<=bx21-2)||(by22>=by21+2 || by22<=by21-2)){ //Validacion solo permitir cordenadas adyacentes
@@ -257,7 +257,7 @@ int si=1; //variable para salir del bucle while cuando la coordenada es correcta
         }
     }
 
-    //Coloca '1' en la ubicaci髇 del barco 2
+    //Coloca '1' en la ubicaci贸n del barco 2
     jugador2[bx21][by21]=254;
     jugador2[bx22][by22]=254;
 
