@@ -13,7 +13,7 @@ while(getchar() != '\n');
 
     //fgets
     printf("\n\nCual es tu nombre y apellido?\n");
-        fgets(Alumno2,sizeof(Alumno2),stdin); //fgets( DondeLoGuardo, sizeof(Tamaño), DondeLeo)
+        fgets(Alumno2,sizeof(Alumno2),stdin); //fgets( DondeLoGuardo, sizeof(TamaÃ±o), DondeLeo)
     printf("(fgets) Tu nombre es: %s", Alumno2);
 
     //lista bidimensional
