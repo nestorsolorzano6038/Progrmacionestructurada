@@ -38,7 +38,7 @@ struct alumno {
 int main(){
     int n;
 
-    printf("Cu·ntos alumnos tiene la clase?\n");
+    printf("Cu√°ntos alumnos tiene la clase?\n");
     scanf("%d", &n);
     getchar();
 
